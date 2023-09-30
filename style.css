@@ -1,0 +1,136 @@
+/*RESET*/
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+a, 
+a:visited, 
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background-color: inherit;
+}
+
+.m-container {
+    width: 320px;
+    position: fixed;
+    font-family: "TT Lakes", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    height: 1120px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    background: #FFF;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02); 
+}
+.m-header {
+    border: 1px solid red;
+}
+/*Logo+Menu*/
+.m-button {
+    height: 40px;
+}
+.m-mob-menu {
+    display: flex;
+    align-items: center;
+    border: 1px solid blue;
+}
+.m-mob-menu__logo {
+    height: 51px;
+    margin-top: 19px;
+    margin-bottom: 18px;
+}
+.m-mob-menu__button {
+    margin: 24px;
+    height: 40px;
+}
+.m-mob-menu__button:first-of-type {
+    margin-left: 24px;
+    margin-right: 17px;
+}
+.m-mob-menu__button:last-of-type {
+    margin-left: 72px;
+}
+
+/*NAV*/
+.m-nav {
+    border: 1px solid green;
+}
+.m-nav__list {
+    display: flex;
+    flex-direction: column;
+    overflow: auto; 
+}
+.m-nav__item {
+    position: relative;
+    margin-top: 32px;
+    margin-left: 24px;
+    border: 1px solid green;
+}
+.m-nav__link {
+    border: 1px solid black;
+    color: #1B1C21;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+}
+.m-nav__link--active {
+    color: #7E7E82;
+}
+.m-nav__link--active:before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 0 3px 3px 0;
+    background-color: #41F6D7;
+    position: absolute;
+    left: -24px;
+    top: -4px;
+}
+/*FOOTER*/
+.m-footer {
+    border: 1px solid purple;
+    padding: 24px;
+
+}
+.m-tablet-menu {
+    border: 1px solid red;
+    display: flex;
+}
+.m-tablet-menu__button {
+    margin-right: 16px;
+}
+.m-mail {
+    border: 1px solid green;
+    color: #1B1C21;
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+.m-phone {
+    color: #1B1C21;
+    font-family: "TT Lakes", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.6px;
+}
