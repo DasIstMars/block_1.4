@@ -150,3 +150,13 @@ button {
 .m-lang_button--active {
     color: #7E7E82;
 }
+/*HOVERS*/
+.m-button {
+    border-radius: 50%;
+}
+.m-button:hover {
+    /* transform: scale(1.3) rotate(-360deg); */
+    transform: scale(1.1) rotate(-360deg);;
+    transition-duration: 1s;
+    box-shadow: 0 0 2px 3px #41F6D7;
+}
