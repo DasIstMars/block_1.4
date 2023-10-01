@@ -159,12 +159,52 @@ button {
 .m-button:hover {
     transform: scale(1.1) rotate(-360deg);
     transition-duration: 1s;
-    box-shadow: 0 0 2px 3px #41F6D7;    
+    box-shadow: 0 0 2px 3px #41F6D7; 
 }
 .m-lang_button:hover  {
     transform: scale(1.2);
     transition-duration: 1s;
     border-radius: 3px;
     background-color: #41F6D7;
-    box-shadow: 0 0 5px 3px #41F6D7;
+    box-shadow: 0 0 5px 3px #41F6D7; 
+}
+.m-tablet-menu__button:first-of-type:hover {
+    animation-name: bell;
+    animation-duration: 0.3s;
+}
+/*ANIMATIONS*/
+@keyframes bell {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    10% {
+        transform: rotateZ(-30deg);
+    }
+    20% {
+        transform: rotateZ(15deg);
+    }
+    30% {
+        transform: rotateZ(-10deg);
+    }
+    40% {
+        transform: rotateZ(7.5deg);
+    }
+    50% {
+        transform: rotateZ(-5deg);
+    }
+    60% {
+        transform: rotateZ(5deg);
+    }
+    70% {
+        transform: rotateZ(-4deg);
+    }
+    80% {
+        transform: rotateZ(3deg);
+    }
+    90% {
+        transform: rotateZ(-3deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
 }
