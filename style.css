@@ -40,7 +40,8 @@ button {
 }
 
 .m-wrapper {
-    height: 1024px;
+    max-height: 1024px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
